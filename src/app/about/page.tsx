@@ -22,6 +22,7 @@ const HONORARY_ADVISORS = [
 ];
 
 const ADVISORS = [
+    { name: "Mr. John Tan (陈约翰)", chineseName: "", image: "/board/placeholder.jpg" },
     { name: "Ung Gim Sei", chineseName: "黄锦西", image: "/board/advisor-1.jpg" }
 ];
 
