@@ -157,8 +157,8 @@ export default function Home() {
                         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
                             <div className="relative aspect-video overflow-hidden rounded-2xl bg-gray-300 shadow-xl">
                                 <Image
-                                    src="/handshake-cooperation.jpg"
-                                    alt="SCFA Mission"
+                                    src="/handshake-partnership-asian.jpg"
+                                    alt="Partnership Handshake - Singapore-China Friendship"
                                     fill
                                     className="object-cover"
                                 />
