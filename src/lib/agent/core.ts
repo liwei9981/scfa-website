@@ -3,8 +3,8 @@ import { sendWhatsAppMessage } from './whatsapp';
 import { sendEmail } from './email';
 import { updateWebsiteContent } from './updater';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+const genAI = process.env.GEMINI_API_KEY ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY) : null;
+const model = genAI ? genAI.getGenerativeModel({ model: "gemini-2.5-flash" }) : null;
 
 // Structural knowledge of the website for the LLM
 const WEBSITE_MAP = `
@@ -130,6 +130,10 @@ Should I go ahead and update the website? (Reply "Yes" or "No")`;
 }
 
 async function callGemini(state: AgentState) {
+    if (!model) {
+        throw new Error('Gemini API is not configured');
+    }
+
     const historyString = state.conversationHistory
         .map(m => `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.content}`)
         .join('\n');

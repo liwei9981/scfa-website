@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { processAgentRequest } from '@/lib/agent/core';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 export async function POST(request: Request) {
     try {
@@ -14,7 +14,7 @@ export async function POST(request: Request) {
         let fromEmail = emailData.from || payload.from || payload.sender;
         let bodyText = emailData.text || emailData.html || payload.text || emailData.subject || payload.subject;
 
-        if (!bodyText && emailData.email_id) {
+        if (!bodyText && emailData.email_id && resend) {
             console.log(`[EMAIL WEBHOOK] Fetching full content for email_id: ${emailData.email_id}`);
             const fullEmail = await resend.emails.get(emailData.email_id);
             console.log('[EMAIL WEBHOOK] Full email object received:', JSON.stringify(fullEmail, null, 2));
