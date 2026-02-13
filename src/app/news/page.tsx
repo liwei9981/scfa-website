@@ -66,6 +66,21 @@ const NEWS_ITEMS = [
             zh: "由南京市中山陵园管理局、南京市客运交通管理处组成的考察团访新中友协，探讨了在城市管理、教育和科技方面的合作机会。"
         },
         image: "/news/nanjing-visit.jpg"
+    },
+    {
+        title: {
+            en: "Entrepreneurship and Corporate Innovation Talk",
+            zh: "我会邀请南洋科技创业中心开设专题讲座"
+        },
+        date: {
+            en: "November 17, 2017",
+            zh: "2017年11月17日"
+        },
+        summary: {
+            en: "SCFA organized a talk on Entrepreneurship and Corporate Innovation, by Dr Xia Zhiqiang from Nanyang Technopreneurship Centre of NTU. Dr Xia shared about how to innovate at work and how to cultivate innovation competency.",
+            zh: "我会邀请南洋理工大学南洋科技创业中心的项目主任夏智强博士，就创业和企业创新发表专题演讲。生动的案例和详实的数据，展示了科技创新的最新动态。"
+        },
+        image: "/news/innovation-talk.jpg"
     }
 ];
 
