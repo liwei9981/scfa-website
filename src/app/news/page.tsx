@@ -51,6 +51,21 @@ const NEWS_ITEMS = [
             zh: "新中友协代表团对北京和上海进行了访问，以加强联系并促进双边了解。"
         },
         image: "/news/news-3.jpg"
+    },
+    {
+        title: {
+            en: "Delegation from Nanjing visited SCFA",
+            zh: "南京中山陵园管理局考察团拜访新中友协"
+        },
+        date: {
+            en: "December 20, 2017",
+            zh: "2017年12月20日"
+        },
+        summary: {
+            en: "A delegation from Nanjing Zhongshan Mountain National Park visited SCFA to explore cooperation in education, city management and technological research.",
+            zh: "由南京市中山陵园管理局、南京市客运交通管理处组成的考察团访新中友协，探讨了在城市管理、教育和科技方面的合作机会。"
+        },
+        image: "/news/nanjing-visit.jpg"
     }
 ];
 
