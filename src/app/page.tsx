@@ -7,60 +7,12 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translations } from "@/lib/i18n/translations";
 
-const SAMPLE_NEWS = [
-    {
-        id: 1,
-        title: {
-            en: "Visit by Vice President Song Jingwu of CPAFFC",
-            zh: "涉及中国人民对外友好协会副会长宋敬武的访问"
-        },
-        date: {
-            en: "September 02, 2019",
-            zh: "2019年9月2日"
-        },
-        summary: {
-            en: "Vice President Song Jingwu of the Chinese People's Association for Friendship with Foreign Countries (CPAFFC) visited SCFA and engaged in in-depth exchanges with various representatives from Singapore.",
-            zh: "中国人民对外友好协会副会长宋敬武访问了新中友协，并与来自新加坡的各界代表进行了深入交流。"
-        },
-        image: "/news/news-1.jpg"
-    },
-    {
-        id: 2,
-        title: {
-            en: "Public Talk: China Under Xi Jinping's New Era: Towards Year 2035",
-            zh: "公开讲座：习近平新时代下的中国：迈向2035年"
-        },
-        date: {
-            en: "May 17, 2018",
-            zh: "2018年5月17日"
-        },
-        summary: {
-            en: "A public lecture discussing China's development strategies and the path toward the 2035 national goals under the leadership of President Xi Jinping.",
-            zh: "一场公开讲座，讨论了在习近平主席领导下的中国发展战略以及迈向2035年国家目标的道路。"
-        },
-        image: "/news/news-2.jpg"
-    },
-    {
-        id: 3,
-        title: {
-            en: "SCFA Delegation Visit to Beijing and Shanghai",
-            zh: "新中友协代表团访问北京和上海"
-        },
-        date: {
-            en: "March – April 2018",
-            zh: "2018年3月-4月"
-        },
-        summary: {
-            en: "A delegation from SCFA conducted a visit to Beijing and Shanghai to strengthen ties and promote bilateral understanding.",
-            zh: "新中友协代表团对北京和上海进行了访问，以加强联系并促进双边了解。"
-        },
-        image: "/news/news-3.jpg"
-    }
-];
+import { NEWS_ITEMS } from "@/lib/data/news";
 
 export default function Home() {
     const { language } = useLanguage();
     const t = translations[language];
+    const latestNews = NEWS_ITEMS.slice(0, 3);
 
     return (
         <div className="flex min-h-screen flex-col bg-gray-50">
@@ -122,7 +74,7 @@ export default function Home() {
                         </div>
 
                         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                            {SAMPLE_NEWS.map((news) => (
+                            {latestNews.map((news) => (
                                 <div key={news.id} className="group overflow-hidden rounded-xl bg-white shadow-sm transition-all hover:shadow-md border border-gray-100">
                                     <div className="relative h-48 w-full bg-gray-200">
                                         <Image
