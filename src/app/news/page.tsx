@@ -81,6 +81,21 @@ const NEWS_ITEMS = [
             zh: "我会邀请南洋理工大学南洋科技创业中心的项目主任夏智强博士，就创业和企业创新发表专题演讲。生动的案例和详实的数据，展示了科技创新的最新动态。"
         },
         image: "/news/innovation-talk.jpg"
+    },
+    {
+        title: {
+            en: "Delegation from Shanghai Association for Science and Technology",
+            zh: "上海市科学技术协会来访"
+        },
+        date: {
+            en: "November 06, 2017",
+            zh: "2017年11月6日"
+        },
+        summary: {
+            en: "A Delegation from Shanghai Association for Science and Technology (SAST) visited NTU and SCFA to explore scientific and technological exchange and cooperation.",
+            zh: "上海市科学技术协会代表团拜访了南洋理工大学及新中友协，双方就上海自贸区人才创新基地及未来跨国科技合作进行了深入探讨。"
+        },
+        image: "/news/shanghai-talk.jpg"
     }
 ];
 
