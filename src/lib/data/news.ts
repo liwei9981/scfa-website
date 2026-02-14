@@ -123,5 +123,25 @@ export const NEWS_ITEMS: NewsItem[] = [
             zh: "上海市科学技术协会代表团拜访了南洋理工大学及新中友协，双方就上海自贸区人才创新基地及未来跨国科技合作进行了深入探讨。"
         },
         image: "/news/shanghai-talk.jpg"
+    },
+    {
+        id: 7,
+        title: {
+            en: "Delegation from Shanghai International Culture Association Visited SCFA",
+            zh: "上海市对外文化交流协会拜访新中友协"
+        },
+        date: {
+            en: "October 30, 2017",
+            zh: "2017年10月30日"
+        },
+        summary: {
+            en: "On 30th October 2017, a 3-person delegation from Shanghai International Culture Association, led by Ms Sun Hui, Deputy Director of General Office, visited SCFA. On behalf of SCFA, Mr Loh Weng Kee and Mr Wang Shouzhi received the delegation.",
+            zh: "2017年10月30日上午，上海市对外文化交流协会代表团一行三人，在办公室副主任孙晖的带领下，拜访新中友协。新中友协外事交际组主任罗荣基与副主任王守志代表接待了代表团一行。"
+        },
+        content: {
+            en: "On 30th October 2017, a 3-person delegation from Shanghai International Culture Association, led by Ms Sun Hui, Deputy Director of General Office, visited SCFA. On behalf of SCFA, Mr Loh Weng Kee and Mr Wang Shouzhi (Head and Deputy Head of External Relations & Social Activities Group) received the delegation. During the meeting, both sides exchanged ideas and discussed on the future cooperation in arts and cultural sector. Ms Sun said, Singapore and Shanghai is very similar, Shanghai can learn a lot from Singapore's experience. Meanwhile, she also invited SCFA to visit Shanghai in future.",
+            zh: "2017年10月30日上午，上海市对外文化交流协会代表团一行三人，在办公室副主任孙晖的带领下，拜访新中友协。新中友协外事交际组主任罗荣基与副主任王守志代表接待了代表团一行。上海市对外文化交流协会自1986年成立以来，积极且广泛推动文化艺术、科学技术、经济金融、人文社会、教育体育等各领域的国际交流活动。本次拜访，双方就文化艺术如书画、戏剧、音乐等方面，探讨合作、交流的可能。孙副主任表示，新加坡与上海有许多相近之处，在中西文化交流方面有许多值得借鉴的地方，并借此机会邀请我会拜访上海。"
+        },
+        image: "/news/shanghai-culture-visit.jpg"
     }
 ];
