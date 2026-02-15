@@ -111,46 +111,21 @@ export default function AboutPage() {
                     <div className="container mx-auto px-4 md:px-6">
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center uppercase tracking-wider">{t.aboutPage.documentsTitle}</h2>
-                            <div className="grid gap-6 md:grid-cols-2">
-                                {/* Constitution */}
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between group hover:border-scfa-navy/30 transition-all">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-scfa-navy/10 rounded-lg flex items-center justify-center text-scfa-navy text-xl group-hover:scale-110 transition-transform">
-                                            📄
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900">{t.aboutPage.constitution}</h3>
-                                            <p className="text-xs text-gray-500 uppercase tracking-widest mt-1">PDF Document</p>
-                                        </div>
-                                    </div>
-                                    <a
-                                        href="/SCFA_Constitution.pdf"
-                                        download="SCFA_Constitution.pdf"
-                                        className="inline-flex items-center justify-center rounded-lg bg-scfa-navy px-4 py-2 text-sm font-medium text-white transition-all hover:bg-opacity-90 active:scale-95 shadow-sm"
-                                    >
-                                        {t.aboutPage.downloadConstitution}
-                                    </a>
-                                </div>
-
-                                {/* Membership Form */}
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between group hover:border-scfa-red/30 transition-all">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-scfa-red/10 rounded-lg flex items-center justify-center text-scfa-red text-xl group-hover:scale-110 transition-transform">
-                                            📝
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900">{t.aboutPage.membershipForm}</h3>
-                                            <p className="text-xs text-gray-500 uppercase tracking-widest mt-1">DOC Document</p>
-                                        </div>
-                                    </div>
-                                    <a
-                                        href="/SCFA_Membership_Application_Form.doc"
-                                        download="SCFA_Membership_Application_Form.doc"
-                                        className="inline-flex items-center justify-center rounded-lg bg-scfa-red px-4 py-2 text-sm font-medium text-white transition-all hover:bg-opacity-90 active:scale-95 shadow-sm"
-                                    >
-                                        {t.aboutPage.downloadForm}
-                                    </a>
-                                </div>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a
+                                    href="/SCFA_Constitution.pdf"
+                                    download="SCFA_Constitution.pdf"
+                                    className="inline-flex items-center justify-center rounded-lg bg-scfa-navy px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-opacity-90 active:scale-95 shadow-sm"
+                                >
+                                    {t.aboutPage.constitution}
+                                </a>
+                                <a
+                                    href="/SCFA_Membership_Application_Form.doc"
+                                    download="SCFA_Membership_Application_Form.doc"
+                                    className="inline-flex items-center justify-center rounded-lg bg-scfa-red px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-opacity-90 active:scale-95 shadow-sm"
+                                >
+                                    {t.aboutPage.membershipForm}
+                                </a>
                             </div>
                         </div>
                     </div>
