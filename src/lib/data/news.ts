@@ -17,6 +17,7 @@ export interface NewsItem {
         zh: string;
     };
     image: string;
+    images?: string[];
 }
 
 export const NEWS_ITEMS: NewsItem[] = [
@@ -59,6 +60,27 @@ export const NEWS_ITEMS: NewsItem[] = [
             zh: "2018年5月12日，由醉花林俱乐部、南洋理工大学高等研究所联合主办，新中友协协办的《习近平\"新时期\"的中国--如何通向2035年》公开讲座，在醉花林俱乐部成功举行，吸引逾400人出席。本次讲座由著名政治学者新加坡国立大学东亚研究所所长郑永年教授主讲，潘国驹教授担任讲座主席。郑教授指出，中共成功召开\"十九大\"、\"两会\"，诸多重大变革正在发生。最重要的是，中共高层对中国的未来长远规划提出了宏观架构：从现今到2020年全面建成小康社会，实现第一个百年奋斗目标；到2035年基本实现社会主义现代化；到本世纪中叶全面建成富强民主文明和谐美丽的社会主义现代化强国。\n\n如何通向2035年？郑教授认为，可从经济、政治和外交三方面来解析。政治方面，西方向来认为中国的制度、共产党的制度不能长久延续，对于中国共产党的研究也不多。中国改革开放初期，西方一度以为中国会向西方体制靠拢，但\"十九大\"显示，中国的体制肯定不会与西方模式相同。西方国家对于取消两任的任期限制也不能理解，有所忧虑。但实际上，中国在走自己的路、采用自己的体制。习近平就明确表示过，中国采用的是具有中国特色的模式，既不输入他国模式，也不输出中国模式。中国模式为许多国家提供了另一种参考选择，引起了一些国家的兴趣，但同时也引来西方的忌惮。\n\n西方的制度是多党制，核心是立法、行政、司法三权分立制衡机制。中国是一党制，虽然不奉行三权分立，但也有对应内部三权分立的制衡机制--决策、执行、监察。这一制度强调的是分工与合作，确保效率，同时也能反腐败；施行历史久远，历经不衰，可看作是中国传统制度的延续和发展。\n\n若着眼西方的民主制度，会发现民主制度也经历了长时间的变化：从最初的精英民主，演变成今天的大众民主（即一人一票）。这一演变最头疼的问题在于大众民主之后该怎么走？精英民主的核心是向上竞争，精英阶层对政策有较为明确的认识和理解，能够促使国家走向更好的发展；然而在大众民主的情况下，假定人人对政策都能理智判断，但实情却是大众对政策的把握不好，且容易被煽动，以致政客高举民粹主义则必胜的局面，是向下竞争的不利体现。\n\n外交方面，目前的焦点都在于中美关系博弈。举世关注的中美贸易战并不一定会全面开打，但面对美国的贸易保护政策，中国必会选择更开放的政策来应对。而相对严峻的应该是技术冷战，因为美国害怕中国掌握高科技技术，而采取相应的对策。但即便如此，也只能拖慢中国的发展，而不能阻止中国的崛起。外在的压力倒是会促使中国更加奋发研究，在科学技术上争取自主独立。\n\n就中国在国际关系和外交政策的变更，值得关注的就是王岐山掌管外交。可以说，中国终于有了全职专注思考外交事务的领导人了。一向以来，中国外交部的角色只局限于政策执行，现在迎来转型阶段，拥有更大的决策权，对于大格局、大外交、大方向有更多的思考，也取得了显著的进步。必需说的是，中国肯定不会和西方发生战争，即使冷战也是可避免的。\n\n亚洲现有的秩序其实是西方秩序在亚洲的延伸，但随着美国逐渐减少其在世界事务的介入、对其世界警察角色的力不从心，中国应当思考如何与其他亚洲大国一同建立起亚洲秩序。习近平与印度总理莫迪在武汉会晤取得良好成绩，双方大谈哲学，讨论大格局，不纠结于小细节，可谓\"哲学外交\" 。与此同时，中国与日本、印尼的关系也见改善。可以预见，若中国、日本、印度、印尼之间能达致基本共识，相信就能建立起一个由亚洲国家主导，不具排他性的亚洲秩序。"
         },
         image: "/news/2018-05-12-talk.jpg"
+    },
+    {
+        id: 8,
+        title: {
+            en: "Public Talk: Towards World-Class Higher Education in China",
+            zh: "讲座：《迈向世界一流的中国高等教育》"
+        },
+        date: {
+            en: "January 21, 2018",
+            zh: "2018年1月21日"
+        },
+        summary: {
+            en: "SCFA invited Prof Huang Wei, Deputy President & Provost of Northwestern Polytechnical University, to give a public talk themed \"Towards World-Class Higher Education in China\" at Singapore Management University, attracting around 80 audiences.",
+            zh: "2018年1月21日，中国工程院院士、西北工业大学常务副校长黄维应邀前来新加坡，在新加坡管理大学开设了一场以《迈向世界一流的中国高等教育》为题的专题演讲，近80人出席了讲座。"
+        },
+        content: {
+            en: "On 21st January 2018, SCFA invited Prof Huang Wei (Deputy President & Provost of Northwestern Polytechnical University) to give a public talk in Singapore, themed Towards World-Class Higher Education in China. Prof Huang introduced the achievements of Northwestern Polytechnical University in various fields, especially in aerospace subject, and contributions towards the modernization of China. He also explained the changes in Chinese education policies and welcomed cooperation from different sectors and areas, in shaping world-class higher education in China. The talk took place at Singapore Management University, attracted around 80 audiences.",
+            zh: "2018年1月21日，中国工程院院士、西北工业大学常务副校长黄维应邀前来新加坡，开设了一场以《迈向世界一流的中国高等教育》为题的专题演讲。\n\n黄维院士在演讲中介绍了西工大在学科建设、人才培养、科学研究、国际交流等领域所取得的进展，并介绍了学校的发展历程、学科特色及其为中国航空航天事业和国家现代化做出的突出贡献。他指出，建设特色鲜明的世界一流大学和一流学科，是西北工业大学肩负的历史使命，西工大人正在奋力拼搏。他表示，中国目前已经进入到新的发展阶段，国家大力实施\u201c科教兴国\u201d和\u201c人才强国\u201d战略，学校响应国家政策，正在着力打造高水平师资队伍，不断提高人才培养质量，进一步提升科技创新能力，并加快国际化进程，他也邀请各方与学校合作，促进多元文化的碰撞与融合，在共同建设世界一流大学的进程中贡献力量。\n\n讲座在新加坡管理大学举行，新中友协会员、南洋理工大学、新加坡管理大学教职员工及学生近80人出席了讲座。"
+        },
+        image: "/news/higher-education-talk.jpg",
+        images: ["/news/higher-education-talk.jpg", "/news/higher-education-talk-group.jpg"]
     },
     {
         id: 3,

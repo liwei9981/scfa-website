@@ -57,6 +57,21 @@ export default function NewsDetailPage() {
                         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap">
                             {news.content ? news.content[language] : news.summary[language]}
                         </div>
+
+                        {news.images && news.images.length > 0 && (
+                            <div className="mt-8 space-y-6">
+                                {news.images.map((img, i) => (
+                                    <div key={i} className="relative w-full aspect-video rounded-xl overflow-hidden">
+                                        <Image
+                                            src={img}
+                                            alt={`${news.title[language]} - ${i + 1}`}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </article>
             </main>
