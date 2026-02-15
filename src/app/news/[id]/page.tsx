@@ -55,7 +55,7 @@ export default function NewsDetailPage() {
                         </h1>
 
                         <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed whitespace-pre-wrap">
-                            {news.summary[language]}
+                            {news.content ? news.content[language] : news.summary[language]}
                         </div>
                     </div>
                 </article>
