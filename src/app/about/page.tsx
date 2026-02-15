@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import { Eye, Target } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translations } from "@/lib/i18n/translations";
 
@@ -80,31 +81,26 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* Content Sections */}
+                {/* History, Vision & Mission */}
                 <section className="py-20">
                     <div className="container mx-auto px-4 md:px-6">
-                        <div className="grid gap-16 lg:grid-cols-2">
-                            <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-6">{t.aboutPage.historyTitle}</h2>
-                                <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
-                                    <p>{t.aboutPage.historyContent}</p>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6">{t.aboutPage.historyTitle}</h2>
+                        <p className="text-gray-600 leading-relaxed text-lg max-w-3xl">{t.aboutPage.historyContent}</p>
+
+                        <div className="grid gap-8 md:grid-cols-2 mt-16">
+                            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 border-t-4 border-t-scfa-red p-8">
+                                <div className="w-12 h-12 bg-scfa-red/10 rounded-full flex items-center justify-center mb-6">
+                                    <Eye className="w-6 h-6 text-scfa-red" />
                                 </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">{t.aboutPage.visionTitle}</h3>
+                                <p className="text-gray-600 leading-relaxed">{t.aboutPage.visionContent}</p>
                             </div>
-                            <div className="grid gap-8 sm:grid-cols-2">
-                                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                                    <div className="w-12 h-12 bg-scfa-red/10 rounded-xl flex items-center justify-center mb-6">
-                                        <span className="text-scfa-red text-2xl">👁</span>
-                                    </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-4">{t.aboutPage.visionTitle}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{t.aboutPage.visionContent}</p>
+                            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 border-t-4 border-t-scfa-navy p-8">
+                                <div className="w-12 h-12 bg-scfa-navy/10 rounded-full flex items-center justify-center mb-6">
+                                    <Target className="w-6 h-6 text-scfa-navy" />
                                 </div>
-                                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                                    <div className="w-12 h-12 bg-scfa-navy/10 rounded-xl flex items-center justify-center mb-6">
-                                        <span className="text-scfa-navy text-2xl">🎯</span>
-                                    </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-4">{t.aboutPage.missionTitle}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{t.aboutPage.missionContent}</p>
-                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">{t.aboutPage.missionTitle}</h3>
+                                <p className="text-gray-600 leading-relaxed">{t.aboutPage.missionContent}</p>
                             </div>
                         </div>
                     </div>
